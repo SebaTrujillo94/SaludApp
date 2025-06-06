@@ -1,3 +1,24 @@
 <ion-app>
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title style="cursor:pointer;" (click)="irAHome()">
+        <img src="assets/logo.png" alt="Mi Salud" style="height:32px;vertical-align:middle;margin-right:8px;">
+        <span style="vertical-align:middle;">SaludApp Clínica</span>
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- Contenido de las páginas -->
   <ion-router-outlet></ion-router-outlet>
+
+  <!-- Footer global -->
+  <ion-footer>
+    <ion-toolbar color="light">
+      <ion-title size="small" style="text-align:center; font-size: 14px;">
+        © 2025 SaludApp Clínica &nbsp;·&nbsp;
+        <ion-icon name="call-outline" style="vertical-align:middle;"></ion-icon> 0800-123-SALUD &nbsp;·&nbsp;
+        <ion-icon name="mail-outline" style="vertical-align:middle;"></ion-icon> contacto&#64;saludapp.com
+      </ion-title>
+    </ion-toolbar>
+  </ion-footer>
 </ion-app>
